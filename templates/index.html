@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AdaptiveLearn — Voice Translator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-icon"></div>
+        <div class="brand-name">AdaptiveLearn</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Voice Translator</h1>
+      <p class="subtitle">Discover how our platform has transformed learning experiences for students worldwide.</p>
+    </section>
+
+    <section class="translator card">
+      <div class="controls-row">
+        <div class="selects">
+          <label>From
+            <select id="srcLang">
+              <option value="auto">Auto</option>
+              <option value="en">English</option>
+              <option value="hi">Hindi</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+            </select>
+          </label>
+          <label>To
+            <select id="tgtLang">
+              <option value="en" selected>English</option>
+              <option value="hi">Hindi</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+            </select>
+          </label>
+        </div>
+        <div class="buttons">
+          <button id="recordBtn" class="btn">Record</button>
+          <button id="stopBtn" class="btn" disabled>Stop</button>
+          <button id="sendBtn" class="btn" disabled>Translate</button>
+        </div>
+      </div>
+
+      <div class="results">
+        <div class="result-block">
+          <h4>Recognized</h4>
+          <pre id="recognized" class="result-text">—</pre>
+        </div>
+        <div class="result-block">
+          <h4>Translated</h4>
+          <pre id="translated" class="result-text">—</pre>
+        </div>
+      </div>
+
+      <audio id="player" controls style="display:none; width:100%; margin-top:12px;"></audio>
+    </section>
+  </main>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

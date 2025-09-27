@@ -1,0 +1,17 @@
+:root{--bg:#071025;--card:#0f1720;--muted:#9aa8b8}
+body{font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#020617 0%, #081023 100%);color:#e6eef8;margin:0}
+.topbar{padding:18px 24px;background:transparent}
+.container{max-width:980px;margin:28px auto;padding:20px}
+.hero{text-align:center;padding:48px 20px 28px}
+.hero h1{font-size:44px;margin:0 0 10px;color:#fff}
+.hero .subtitle{color:rgba(255,255,255,0.55);font-size:18px}
+.card{background:rgba(255,255,255,0.02);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.controls-row{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.selects label{display:inline-block;margin-right:12px;font-size:14px;color:var(--muted)}
+.selects select{padding:8px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:#fff}
+.buttons .btn{padding:10px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:linear-gradient(90deg,#6dd3ff,#b36bff);color:#071025;font-weight:600;margin-left:6px}
+.result-block{flex:1;background:transparent;padding:12px;border-radius:10px}
+.results{display:flex;gap:14px;margin-top:18px}
+.result-block h4{margin:0 0 8px;font-size:14px}
+.result-text{white-space:pre-wrap;min-height:60px;color:#dfe9f7;background:rgba(255,255,255,0.01);padding:12px;border-radius:8px}
+@media(max-width:800px){.controls-row{flex-direction:column;align-items:stretch}.results{flex-direction:column}}
